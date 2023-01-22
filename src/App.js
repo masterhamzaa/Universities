@@ -8,8 +8,10 @@ function App() {
     <React.Fragment>
       <div className="bt"></div>
       <div className="container">
-        <ListCountries /><br />
-        <DetailCountry /><br />
+        <ListCountries />
+        <br />
+        <DetailCountry />
+        <br />
         <DetailUnvier />
       </div>
     </React.Fragment>
