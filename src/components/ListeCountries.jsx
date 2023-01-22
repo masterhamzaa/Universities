@@ -14,6 +14,7 @@ export default function ListCountries() {
   const loadd = useSelector((state) => state.c.load);
   const errorr = useSelector((state) => state.c.error);
   const select = useSelector((state) => state.c.selectedCountry);
+  
  
   //const [selected, SetSelected] = useState('');
 
