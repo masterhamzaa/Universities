@@ -1,7 +1,7 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
 
-const getUniversity = createAsyncThunk(
+export const getUniversity = createAsyncThunk(
   "universities/getUniversity",
   async () => {
     const req = await axios.get("http://universities.hipolabs.com/search?country=");

@@ -16,15 +16,15 @@ console.log(select)
               </tr>
             </thead>
             <tbody>
-            
-              {dataa?.map((item,index) => {
+              {(dataa.length ===0)?<span>Wait...</span>:(
+              dataa?.map((item,index) => {
                 return (<>
                   <tr key={index}>
                     <td>{item.name}</td>
                     <td><a href={item.web_pages} target="_blank" rel="noreferrer">{item.web_pages}</a></td>
                   </tr>
                 </>)
-               })}
+               }))}
                
                 
                 </tbody>
