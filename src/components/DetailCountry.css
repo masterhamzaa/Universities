@@ -1,0 +1,18 @@
+.flex {
+    display: flex;
+    column-gap: 120px;
+    padding-left: 15px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    row-gap: 20px;
+}
+.adjust{
+    padding: 14px !important;
+    width: 400px;
+    border-radius: 16px;
+}
+a{
+    padding: 15px !important;
+    overflow-x: hidden;
+}
