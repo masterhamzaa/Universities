@@ -5,10 +5,11 @@ import "./DetailCountry.css";
 export default function DetailCountry() {
   const dataa = useSelector((state) => state.c.data);
   const select = useSelector((state) => state.c.selectedCountry);
- // console.log(dataa);
+  // console.log(dataa);
 
   return (
     <div className="container">
+      {/* eslint-disable-next-line */}
       {dataa?.map((item) => {
         if (item.name.common === select) {
           return (
@@ -25,24 +26,36 @@ export default function DetailCountry() {
                 />
                 <div className="list-group adjust">
                   <a
-                    href="#"
+                    href="http://localhost:3000/#"
                     className="list-group-item list-group-item-action active"
                   >
                     <b>Officiel Name : {item.name.official}</b>
                   </a>
-                  <a href="#" className="list-group-item list-group-item-action">
+                  <a
+                    href="http://localhost:3000/#"
+                    className="list-group-item list-group-item-action"
+                  >
                     {" "}
                     <b>Capital : &nbsp; {item.capital}</b>
                   </a>
-                  <a href="#" className="list-group-item list-group-item-action">
+                  <a
+                    href="http://localhost:3000/#"
+                    className="list-group-item list-group-item-action"
+                  >
                     {" "}
                     <b>Region : &nbsp; {item.region}</b>
                   </a>
-                  <a href="#" className="list-group-item list-group-item-action">
+                  <a
+                    href="http://localhost:3000/#"
+                    className="list-group-item list-group-item-action"
+                  >
                     {" "}
                     <b>Population : &nbsp; {item.population}</b>
                   </a>
-                  <a href="#" className="list-group-item list-group-item-action">
+                  <a
+                    href="http://localhost:3000/#"
+                    className="list-group-item list-group-item-action"
+                  >
                     {" "}
                     <b>Time Zone: &nbsp;{item.timezones}</b>
                   </a>

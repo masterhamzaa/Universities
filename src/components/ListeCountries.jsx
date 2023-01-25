@@ -24,7 +24,8 @@ export default function ListCountries() {
   useEffect(() => {
     dispatch(getCountries());
     dispatch(getUniversity());
-  }, [dispatch]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   let content;
   if (loadd === "pending")
