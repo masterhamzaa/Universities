@@ -5,8 +5,6 @@ export default function DetailUnvier() {
   const dataa = useSelector((state) => state.u.data).filter(
     (item) => item.country === select
   );
-  console.log(select);
-  console.log(dataa);
 
   return (
     <div>
