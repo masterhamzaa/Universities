@@ -19,7 +19,7 @@ export default function DetailCountry() {
                   src={item.flags.png}
                   alt={`${item.name.common} flag`}
                   style={{
-                    width: "400px",
+                    width: "336px",
                     height: "270px",
                     transition: "transform 3s",
                   }}
